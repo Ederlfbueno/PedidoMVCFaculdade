@@ -14,4 +14,6 @@ public class DataContext : DbContext
     }
 
     public DbSet<Pedido_MVC.Models.Cidade> Cidades { get; set; }
+    public DbSet<Pedido_MVC.Models.Produto> Produtos { get; set; }
+
 }
