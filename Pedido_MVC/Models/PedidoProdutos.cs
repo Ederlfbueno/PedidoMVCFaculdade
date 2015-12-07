@@ -11,6 +11,10 @@ namespace Pedido_MVC.Models
 
         public int ProdutoId { get; set; }
 
+        public decimal Preco { get; set; }
+
+        public decimal Quantidade { get; set; }
+
         public virtual Pedido Pedido { get; set; }
 
         public virtual Produto Produto { get; set; }

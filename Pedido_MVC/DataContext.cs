@@ -14,9 +14,16 @@ public class DataContext : DbContext
     }
 
     public DbSet<Pedido_MVC.Models.Cidade> Cidades { get; set; }
+
     public DbSet<Pedido_MVC.Models.Produto> Produtos { get; set; }
 
-    public System.Data.Entity.DbSet<Pedido_MVC.Models.Cliente> Clientes { get; set; }
+    public DbSet<Pedido_MVC.Models.Cliente> Clientes { get; set; }
 
-    public System.Data.Entity.DbSet<Pedido_MVC.Models.Usuario> Usuarios { get; set; }
+    public DbSet<Pedido_MVC.Models.Usuario> Usuarios { get; set; }
+
+    public DbSet<Pedido_MVC.Models.Pedido> Pedidoes { get; set; }
+
+    public DbSet<Pedido_MVC.Models.Pedido> PedidoProdutos { get; set; }
+
+    public System.Data.Entity.DbSet<Pedido_MVC.Models.PedidoProduto> PedidoProdutoes { get; set; }
 }
